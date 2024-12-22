@@ -1,0 +1,162 @@
+
+
+/* Hover effect for the post-edit form
+.post-edit:hover {
+    transform: scale(1.05); 
+} */
+
+.post-edit {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Ensure it takes up at least the full viewport height */
+    background: linear-gradient(to bottom, #e0ffff, #7fffd4);
+}
+
+
+.form-div {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+
+.form-div label {
+    margin-right: 10px; 
+    width: 150px; 
+}
+  
+.form-div input,
+.form-div select
+.form-div textarea {
+    flex: 1; 
+    padding: 15px; 
+    border: 1px solid #ccc;
+  }
+
+/* Form layout and spacing */
+form {
+    width: 100%;        /* Make the form fill the entire width */
+    max-width: 600px; 
+}
+
+#post-edit-window {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    /* Separate left and right button groups */
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Label styling */
+label {
+    display: block;         
+    margin: 10px 0 5px;    
+  }
+
+/* Input and textarea styling */
+input[type="text"],
+textarea {
+  width: 100%;          /* Make input and textarea fill the width */
+  padding: 10px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;  
+}
+
+select {
+  width: 100%; 
+  padding: 10px;
+  font-size: 16px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  text-align: center;
+}
+
+#post-edit-window select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border: 3px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+  
+.post-edit .button-container button {
+    flex: 1;               
+    margin-right: 10px;         
+}
+
+button {
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;        /* Change cursor on hover */
+}
+
+.save-btn, .edit-btn {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.save-btn:hover, .edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    padding: 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+.delete-btn {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 12px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
